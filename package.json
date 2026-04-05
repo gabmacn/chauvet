@@ -1,0 +1,38 @@
+{
+	"name": "@gabmacn/chauvet",
+	"version": "0.1.0",
+	"description": "A primal, performant, and uncompromising UI component library.",
+	"author": "Gabriel Machado Nunes",
+	"main": "./dist/index.js",
+	"module": "./dist/index.mjs",
+	"types": "./dist/index.d.ts",
+	"sideEffects": false,
+	"files": [
+		"dist"
+	],
+	"scripts": {
+		"build": "tsup src/index.ts --format cjs,esm --dts",
+		"dev": "tsup src/index.ts --format cjs,esm --dts --watch",
+		"clean": "rm -rf dist",
+		"lint": "eslint src/"
+	},
+	"peerDependencies": {
+		"react": "^19.2.4",
+		"react-dom": "^19.2.4"
+	},
+	"dependencies": {
+		"@chenglou/pretext": "^0.0.4"
+	},
+	"devDependencies": {
+		"@types/react": "^19.0.0",
+		"@types/react-dom": "^19.0.0",
+		"react": "^19.2.4",
+		"react-dom": "^19.2.4",
+		"tailwindcss": "^4.2.2",
+		"tsup": "^8.5.1",
+		"typescript": "^6.0.2"
+	},
+	"publishConfig": {
+		"access": "public"
+	}
+}

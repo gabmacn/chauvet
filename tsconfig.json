@@ -1,0 +1,40 @@
+{
+	"compilerOptions": {
+		/* Base Options: The Bleeding Edge */
+		"target": "ESNext",
+		"lib": ["ESNext", "DOM", "DOM.Iterable"],
+		"module": "ESNext",
+
+		/* Modern Bundler Resolution (TS 5.0+) */
+		"moduleResolution": "bundler",
+		"allowImportingTsExtensions": true,
+		"isolatedModules": true,
+		"moduleDetection": "force",
+		"resolveJsonModule": true,
+
+		/* Strictness: The Gauntlet */
+		"strict": true,
+		"noUncheckedIndexedAccess": true,
+		"exactOptionalPropertyTypes": true,
+		"noImplicitOverride": true,
+		"noPropertyAccessFromIndexSignature": true,
+		"allowUnreachableCode": false,
+		"allowUnusedLabels": false,
+
+		/* Modern Type Importing (TS 5.0+) */
+		"verbatimModuleSyntax": true,
+
+		/* React / JSX (Assuming Chauvet is built on React) */
+		"jsx": "react-jsx",
+
+		/* Output */
+		"noEmit": true,
+
+		/* Interop */
+		"esModuleInterop": true,
+		"forceConsistentCasingInFileNames": true,
+		"skipLibCheck": true,
+	},
+	"include": ["src/**/*"],
+	"exclude": ["node_modules", "dist"],
+}
